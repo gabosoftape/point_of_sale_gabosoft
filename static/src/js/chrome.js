@@ -60,6 +60,7 @@ var OrderSelectorWidget = PosBaseWidget.extend({
                 confirm: function(){
                   try {
                     self.pos.push_order();
+                    console.log("pusheamos orden");
                   } catch (e) {
                     console.log("se jodio esto... Error: "+e );
 
@@ -67,7 +68,7 @@ var OrderSelectorWidget = PosBaseWidget.extend({
 
                   }
                   self.pos.delete_current_order();
-                  console.log("se borro la orden por lo tanto guardamos las lineas de orden eliminadas ");  
+                  console.log("se borro la orden por lo tanto guardamos las lineas de orden eliminadas ");
 
 
                 },
