@@ -34,6 +34,7 @@ var OrderSelectorWidget = PosBaseWidget.extend({
                 return orders[i];
             }
         }
+        console.log(orders);
         return undefined;
     },
     order_click_handler: function(event,$el) {
