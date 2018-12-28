@@ -59,7 +59,7 @@ var OrderSelectorWidget = PosBaseWidget.extend({
                 'body': _t('You will lose any data associated with the current order'),
                 confirm: function(){
                   try {
-                    self.pos.push_order();
+                    console.log(order);
                     console.log("pusheamos orden");
                   } catch (e) {
                     console.log("se jodio esto... Error: "+e );
