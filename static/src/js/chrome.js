@@ -38,6 +38,7 @@ var OrderSelectorWidget = PosBaseWidget.extend({
         return undefined;
     },
     order_click_handler: function(event,$el) {
+        console.log("activamos el metodo order_click_handler");
         var order = this.get_order_by_uid($el.data('uid'));
         if (order) {
             this.pos.set_order(order);
@@ -45,6 +46,7 @@ var OrderSelectorWidget = PosBaseWidget.extend({
     },
     neworder_click_handler: function(event, $el) {
         this.pos.add_new_order();
+        console.log("se agrego una nueva orden");
     },
     deleteorder_click_handler: function(event, $el) {
         var self  = this;
