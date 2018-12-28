@@ -56,7 +56,7 @@ var OrderSelectorWidget = PosBaseWidget.extend({
                 'body': _t('You will lose any data associated with the current order'),
                 confirm: function(){
                     self.pos.delete_current_order();
-                    console.log("se borro la orden por lo tanto guardamos las lineas de orden ");
+                    console.log("se borro la orden por lo tanto guardamos las lineas de orden eliminadas ");
                 },
             });
         } else {
