@@ -2429,7 +2429,8 @@ exports.Order = Backbone.Model.extend({
         }
     },
     select_paymentline: function(line){
-      console.log("entramos al metodo metodo select_paymenline..." + line);
+      var log = line.name;
+      console.log("entramos al metodo metodo select_paymenline..." + log);
         if(line !== this.selected_paymentline){
             if(this.selected_paymentline){
                 this.selected_paymentline.set_selected(false);
