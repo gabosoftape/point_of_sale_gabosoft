@@ -2430,8 +2430,8 @@ exports.Order = Backbone.Model.extend({
     },
     select_paymentline: function(line){
       console.log(line);
-      if(line != null){
-        console.log(line.cashregister.journal_id[0]);
+      if(line.name == 'REDEBAN BCM (COP)'){
+        console.log("aqui metemos el modal");
       }
       console.log("entramos al metodo metodo select_paymenline...");
         if(line !== this.selected_paymentline){
