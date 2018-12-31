@@ -2431,12 +2431,8 @@ exports.Order = Backbone.Model.extend({
     select_paymentline: function(line){
       console.log(line);
       if(line.name == 'REDEBAN BCM (COP)'){
-        this.pos.gui.show_popup('packlotline', {
-            'title': _t('Numero de baucher requerido'),
-            'pack_lot_lines': 'pack lot lines',
-            'order_line': 'order_line',
-            'order': 'this',
-        });
+        window.alert(line.name);
+        
       }
       console.log("entramos al metodo metodo select_paymenline...");
         if(line !== this.selected_paymentline){
