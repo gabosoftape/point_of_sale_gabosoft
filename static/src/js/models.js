@@ -2375,6 +2375,7 @@ exports.Order = Backbone.Model.extend({
         }
     },
     deselect_orderline: function(){
+      console.log("entramos al metodo que borra orderlines ");
         if(this.selected_orderline){
             this.selected_orderline.set_selected(false);
             this.selected_orderline = undefined;
@@ -2654,7 +2655,7 @@ exports.NumpadState = Backbone.Model.extend({
     deleteLastChar: function() {
         if(this.get('buffer') === ""){
             if(this.get('mode') === 'quantity'){
-                console.log("se elimina la linea de orden ");
+
                 this.trigger('set_value','remove');
             }else{
                 this.trigger('set_value',this.get('buffer'));
