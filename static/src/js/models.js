@@ -2281,7 +2281,7 @@ exports.Order = Backbone.Model.extend({
         this.trigger('change');
     },
     remove_orderline: function( line ){
-      console.log("entramos al metodo que borra orderlines ");
+      console.log("se borro una linea de producto");
         this.assert_editable();
         this.orderlines.remove(line);
         this.select_orderline(this.get_last_orderline());
