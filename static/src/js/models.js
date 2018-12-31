@@ -2430,6 +2430,7 @@ exports.Order = Backbone.Model.extend({
     },
     select_paymentline: function(line){
       console.log(line);
+      console.log(line.cashregister.journal_id[0]);
       console.log("entramos al metodo metodo select_paymenline...");
         if(line !== this.selected_paymentline){
             if(this.selected_paymentline){
